@@ -1,0 +1,14 @@
+.c-1{
+    font-size: xx-large;
+    font-family: cursive;
+    font-weight: bolder;
+    color: royalblue;
+    text-align: center;
+    margin-top: 20%;
+    /* justify-content: space-between; */
+
+}
+
+body{
+    background-color: palevioletred;
+}

@@ -1,0 +1,21 @@
+.h1-impact{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    color: red;
+    text-align: center;
+}
+
+.impact-text{
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: large;
+    font-family: cursive;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+body{
+   background-color: black; 
+   
+}
