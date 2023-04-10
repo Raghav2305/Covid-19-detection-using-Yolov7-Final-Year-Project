@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+    <section class="about-page">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> -->
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About the Project</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Impact of Covid-19</a>
+                </li>
+              </ul>
+              
+            </div>
+          </nav>
+
+        <h1 class="h1-about">About</h1>
+       <article class="about-text">
+        The current COVID-19 pandemic threatens human life, health, and productivity. AI plays an essential role in COVID-19 case classification as we can apply machine learning models on COVID-19 case data to predict infectious cases and recovery rates using chest x-ray images. AI can help in the early detection of the disease, highlight the most infected areas and provide the best recovery options in a short period. In this paper, we have tried to predict the existence of the Coronavirus by performing feature detection on chest x-ray images. We collected real-life patient data from various accurate online sources and used it as input for our model. Then the chest X-Ray photographs were precisely annotated into two classes, i.e. (infected and non-infected) as required by the model. We trained the model on the collected data after conducting boundary detection using Convolutional Neural Networks (CNN) to zero in on the infected area. We then leveraged the YOLO (You only look once) object detection model on top of the CNN to train the model and classify the images as infected or non-infected. We selected our model parameters, such as max_batches and number of filters, based on the number of classes we have. After completing all iterations, we assessed our model using the MAP (mean average precision) values calculated after every 1000 iterations and tested it on unseen images by utilizing the best weights downloaded from the model. During the model training stage, we tried to identify which factors affect model prediction accuracy and loss, like activation function, model optimizer, etc. While concluding the project, we concluded that YOLO is one of the best choices for developing and training a feature detection model as it is an end-to-end object detection mechanism. It has the advantages of detection speed and accuracy and meets the real-time requirements for several use cases.
+       </article> 
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
