@@ -4,13 +4,50 @@
     font-weight: bolder;
     color: royalblue;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 2%;
     /* justify-content: space-between; */
 
 }
 body{
-    background-color: palevioletred;
+    background-color: whitesmoke;
 }
 
+#image-container {
+    width: 300px;
+    height: 300px;
+    border: 2px dashed #ddd;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    margin-left: 40%;
+    color: black;
+  }
+  
+  #drop-zone-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #image-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 
+  .btn{
+    margin-top: 50px;
+  }
 
+  /* #drop-zone-text{
+    font-size: x-small;
+  } */
+
+  .input-button{
+    margin-top: 20px;
+    font-size: larger;
+    font-family: cursive;
+    color: red;
+  }

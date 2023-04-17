@@ -5,5 +5,44 @@
 {% endblock link %}
 
 {% block body %}
-<h1 class="c-1">Here I am gonna compare all Image Classification algorithms</h1>
+
+<h4 class="c-1">Comparing the algorithms based on Performance accuracy and Time Complexity in the context of Image classification.</h4>
+
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Algorithm</th>
+      <th scope="col">Performance Accuracy</th>
+      <th scope="col">TIme Complexity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>KNN</td>
+      <td>Moderate to High</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>SVM</td>
+      <td>High</td>
+      <td>Moderate to High</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Yolov7</td>
+      <td>Very High</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Random Forest</td>
+      <td>High</td>
+      <td>Moderate to High</td>
+    </tr>
+  </tbody>
+</table>
+
 {% endblock body %}

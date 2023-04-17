@@ -1,0 +1,9 @@
+train: ./data/train  # 118287 images
+val: ./data/val  # 5000 images
+
+
+# number of classes
+nc: 2
+
+# class names
+names: [ 'Covid', 'Normal' ]

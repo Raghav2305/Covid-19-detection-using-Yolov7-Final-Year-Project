@@ -2,10 +2,62 @@
 
 {% block link %}
   <link rel="stylesheet" href="../static/css/index.css">
+  
 {% endblock link %}
 
 {% block body %}
 <article class="a-1">
-  Hello World, Welcome to the COVID Predictor!!
+  Hello, Welcome to the COVID Predictor!!
+  <br>
+  <br>
+  
+  
+  <form enctype="multipart/form-data" action="{{ url_for("upload_files") }}" method="POST">
+    <div id="image-container" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+      <div id="drop-zone-text">Drag and drop an image here or click to browse</div>
+      <input name="image" type="file" id="file-input" accept="image/*" onchange="fileInputChangeHandler(event);">
+      <img id="image-thumbnail">
+      <input class="input-button" type="submit" value="Upload">
+    </div>
+  </form>
+   
+  
+  
+  
+  
 </article>
+
+<script>
+  function dropHandler(event) {
+    event.preventDefault();
+    const file = event.dataTransfer.files[0];
+    displayImage(file);
+  }
+  
+  function dragOverHandler(event) {
+    event.preventDefault();
+  }
+  
+  function fileInputChangeHandler(event) {
+    const file = event.target.files[0];
+    displayImage(file);
+  }
+  
+  function displayImage(file) {
+    if (file.type.match("image.*")) {
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        const image = document.getElementById("image-thumbnail");
+        image.src = event.target.result;
+        document.getElementById("drop-zone-text").style.display = "none";
+        image.style.display = "block";
+      }
+      reader.readAsDataURL(file);
+    } else {
+      alert("Please choose an image file.");
+    }
+  }
+</script>
+
+
 {% endblock body %}

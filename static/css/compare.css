@@ -1,14 +1,17 @@
 .c-1{
     font-size: xx-large;
     font-family: cursive;
-    font-weight: bolder;
-    color: royalblue;
+    font-weight: bold;
+    color: red;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 2%;
     /* justify-content: space-between; */
-
+    padding-bottom: 40px;
 }
 
 body{
-    background-color: palevioletred;
+    background-color: whitesmoke;
+}
+.table {
+    color: black;
 }
