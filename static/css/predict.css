@@ -1,0 +1,31 @@
+.p-1{
+    text-align: center;
+    margin-top: 50px;
+    
+    font-family: cursive;
+    color: red;
+}
+
+.results{
+    text-align: center;
+    margin-top: 20px;
+    font-size: larger;
+    font-family: cursive;
+    color: black;
+}
+
+.covid-text{
+    margin-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: large;
+    font-family: cursive;
+    font-weight: bold;
+    color: black;
+}
+.covid-para{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: larger;
+    color: red;
+}

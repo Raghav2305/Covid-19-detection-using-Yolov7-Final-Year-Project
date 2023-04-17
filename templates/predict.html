@@ -1,6 +1,46 @@
 {% extends 'base.html' %}
 
+{% block link %}
+  <link rel="stylesheet" href="../static/css/predict.css">
+{% endblock link %}
+
 {% block body %}
-<h1>Prediction Result</h1>
-<p>The predicted class is: {{ prediction }}</p>
+<h1 class="p-1">Prediction Result</h1>
+{% if prediction == "COVID" %}
+    <article class="results">
+       <b> The predicted class is: <u>{{ prediction }}</u></b> 
+    </article>
+    <article class="covid-text">
+
+        <p class="covid-para">In case of Covid-19 please follow the following insrtuctions:</p>
+
+        1.<u>Isolate Yourselves</u>: The infected person should immediately isolate themselves from others to avoid spreading the virus. They should stay in a separate room and use a separate bathroom if possible. They should also avoid contact with pets.
+        <br>
+        <br>
+        2. <u>Monitor your symptoms</u>: COVID-19 can cause a wide range of symptoms, including fever, cough, fatigue, and shortness of breath. The infected person should monitor their symptoms closely and seek medical attention if their condition worsens. They should also take medications as directed by their healthcare provider to manage their symptoms.
+        <br>
+        <br>
+        3. <u>Inform your close contacts</u>: The infected person should inform their close contacts, including family members, friends, and coworkers, about their positive test result. They should encourage their close contacts to get tested and to take appropriate measures to prevent the spread of the virus.
+    </article>
+{% endif %}
+
+{% if prediction == "NORMAL" %}
+<article class="results">
+    <b> The predicted class is: <u>{{ prediction }}</u></b> 
+ </article>
+
+ <article class="covid-text">
+    <p class="covid-para">In case you do not have Covid-19 please follow the following insrtuctions for prevention:</p>
+
+        1.<u>Get Vaccinated </u>:Vaccines are highly effective at preventing COVID-19 and reducing the risk of severe illness and hospitalization. People should get vaccinated as soon as they are eligible, and continue to follow recommended precautions even after getting vaccinated.
+        <br>
+        <br>
+        2. <u>Practice Good Hygiene</u>: People should regularly wash their hands with soap and water for at least 20 seconds, or use hand sanitizer if hand washing is not possible. They should also avoid touching their face, especially their mouth, nose, and eyes. Additionally, people should cover their coughs and sneezes with a tissue or their elbow.
+        <br>
+        <br>
+        3. <u>Wear a Mask</u>: Masks can help prevent the spread of COVID-19 by reducing the amount of respiratory droplets that are released into the air. People should wear a mask in indoor public settings, particularly in areas of high transmission, and in crowded outdoor settings where social distancing is difficult to maintain. Masks should completely cover the nose and mouth and be worn snugly against the sides of the face without gaps.
+    
+ </article>
+{% endif %}
+
 {% endblock body %}
