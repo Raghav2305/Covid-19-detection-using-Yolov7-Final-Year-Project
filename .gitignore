@@ -2,3 +2,5 @@ Data/
 /best.pt
 /test_on_these_images
 /Resnet50/resnet50.h5
+Yolov7/
+VGG16/

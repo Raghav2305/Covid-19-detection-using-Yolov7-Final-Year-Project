@@ -15,3 +15,18 @@ body{
 .table {
     color: black;
 }
+
+.second-table{
+    margin-left: 50px;
+}
+.first-table{
+    margin-left: 50px;
+}
+
+.para{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    font-family: cursive;
+    font-size: larger;
+}

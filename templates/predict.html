@@ -6,9 +6,9 @@
 
 {% block body %}
 <h1 class="p-1">Prediction Result</h1>
-{% if prediction == "COVID" %}
+{% if prediction == "COVID" or prediction == "Covid" %}
     <article class="results">
-       <b> The predicted class is: <u>{{ prediction }}</u></b> 
+       <b> The predicted class is: <u>{{ prediction }} with an accuracy of 96% !!</u></b> 
     </article>
     <article class="covid-text">
 
@@ -24,7 +24,7 @@
     </article>
 {% endif %}
 
-{% if prediction == "NORMAL" %}
+{% if prediction == "NORMAL" or prediction == "Normal" %}
 <article class="results">
     <b> The predicted class is: <u>{{ prediction }}</u></b> 
  </article>

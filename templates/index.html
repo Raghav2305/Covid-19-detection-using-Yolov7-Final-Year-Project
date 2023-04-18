@@ -12,7 +12,7 @@
   <br>
   
   
-  <form enctype="multipart/form-data" action="{{ url_for("upload_files") }}" method="POST">
+  <form enctype="multipart/form-data" action="{{ url_for("upload_files") }}" method="POST" onsubmit= "return validateForm()">
     <div id="image-container" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
       <div id="drop-zone-text">Drag and drop an image here or click to browse</div>
       <input name="image" type="file" id="file-input" accept="image/*" onchange="fileInputChangeHandler(event);">
@@ -28,6 +28,16 @@
 </article>
 
 <script>
+
+  function validateForm() {
+    var fileInput = document.querySelector('input[type="file"]');
+    if (fileInput.files.length === 0) {
+      alert("Error: Nothing selected to upload");
+      return false;
+    }
+    return true;
+  }
+
   function dropHandler(event) {
     event.preventDefault();
     const file = event.dataTransfer.files[0];
