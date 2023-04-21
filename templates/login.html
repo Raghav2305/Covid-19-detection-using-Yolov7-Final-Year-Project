@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login | Covid Detector</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		
+		form {
+			max-width: 400px;
+			margin: 50px auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0,0,0,.1);
+			border-radius: 5px;
+			text-align: center;
+		}
+		
+		h1.l-1 {
+			text-align: center;
+			font-size: 40px;
+			color: #333;
+			margin-top: 50px;
+		}
+		
+		h2 {
+			font-size: 24px;
+			color: #333;
+			margin-bottom: 20px;
+			margin-top: 10px;
+		}
+		
+		input[type="text"],
+		input[type="password"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			margin: 10px 0;
+			font-size: 16px;
+			border-radius: 5px;
+			border: 1px solid #ddd;
+		}
+		
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			font-size: 16px;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 20px;
+			transition: background-color 0.3s;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #555;
+		}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			font-size: 16px;
+			transition: color 0.3s;
+			display: block;
+			margin-top: 10px;
+		}
+		
+		a:hover {
+			color: #555;
+		}
+
+		.btn {
+			background-color: #333;
+			color: #fff;
+			font-size: 16px;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 20px;
+			transition: background-color 0.3s;
+		}
+
+		.btn:hover {
+			background-color: #555;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="l-1">Covid Detector</h1>
+	<form method="POST" action="">
+		<h2>Login</h2>
+		{{ form.hidden_tag() }}
+        {{ form.username }}
+        {{ form.password }}
+		{{ form.submit }}
+		<a href="register">Don't have an account? Sign up!</a>
+		<a class="btn" href= "/">Home</a>
+	</form>
+</body>
+</html>
