@@ -6,8 +6,13 @@
 {% endblock link %}
 
 {% block body %}
+
+{% if username %}
+    <p class="user-para">Hey {{ username }} 👋🏻</p>
+{% endif %}
+
 <article class="a-1">
-  Hello, Welcome to the COVID Predictor!!
+  Welcome to the COVID Predictor!!
   <br>
   <br>
   

@@ -51,3 +51,10 @@ body{
     font-family: cursive;
     color: red;
   }
+
+  .user-para{
+    font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+  }

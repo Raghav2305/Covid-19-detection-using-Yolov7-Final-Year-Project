@@ -96,7 +96,9 @@ def welcome():
 @app.route('/index', methods=['GET', 'POST'])
 @login_required
 def index():
-    return render_template('index.html')
+    form = LoginForm()
+    username = current_user.firstname if current_user.is_authenticated else None
+    return render_template('index.html', username=username)
 
 
 @app.route("/login", methods=["GET", "POST"])
