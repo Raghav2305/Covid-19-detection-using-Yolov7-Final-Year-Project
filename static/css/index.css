@@ -50,6 +50,13 @@ body{
     font-size: larger;
     font-family: cursive;
     color: red;
+    
+  }
+
+  .input-button:hover{
+    background-color: beige;
+    border-radius: 10%;
+    font-weight: bolder;
   }
 
   .user-para{
