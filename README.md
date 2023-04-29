@@ -47,5 +47,17 @@ python detect.py --source data/samples --weights runs/train/exp/weights/best.pt 
 ## Results
 The trained model achieved an accuracy of 95% on the test set. The results can be visualized using the detect.py script.
 
+## UI:
+
+![index page](https://user-images.githubusercontent.com/82498222/235307960-8cdd76c6-def7-49da-a5a2-5aada6befd3d.jpg) <br>
+
+![prediction page](https://user-images.githubusercontent.com/82498222/235308008-e0ab62f8-649a-4ed3-b7e4-8120fde65e60.jpg) <br>
+
+![register page](https://user-images.githubusercontent.com/82498222/235308055-c9394c95-8d39-4704-911f-8f66b2facb1d.jpg)
+
+
+
+
+
 ## License
 This project is licensed under the MIT License.
