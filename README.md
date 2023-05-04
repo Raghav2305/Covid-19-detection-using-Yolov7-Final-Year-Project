@@ -53,11 +53,14 @@ The trained model achieved an accuracy of 95% on the test set. The results can b
 
 ![prediction page](https://user-images.githubusercontent.com/82498222/235308008-e0ab62f8-649a-4ed3-b7e4-8120fde65e60.jpg) <br>
 
-![register page](https://user-images.githubusercontent.com/82498222/235308055-c9394c95-8d39-4704-911f-8f66b2facb1d.jpg)
+![register page](https://user-images.githubusercontent.com/82498222/235308055-c9394c95-8d39-4704-911f-8f66b2facb1d.jpg)<br>
 
 
+## After all installations and loading the best weights and the model run the below code inside your environment:
 
-
+```
+python app.py
+```
 
 ## License
 This project is licensed under the MIT License.
